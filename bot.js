@@ -11,5 +11,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'Alexa, play despacito') {
+    	message.reply('Here is Despcito by Luis Fonsi for you - https://www.youtube.com/watch?v=kJQP7kiw5Fk');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
