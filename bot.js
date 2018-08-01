@@ -17,6 +17,12 @@ client.on('message', message => {
   	}
 });
 
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
+
+const Discord = require('discord.js');
+const bot = new Discord.Client();
+
 let prefix = ">";
 
 bot.on('ready', () => {
@@ -62,6 +68,3 @@ bot.on('message', msg => {
 });
 
 bot.login('');
-
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
