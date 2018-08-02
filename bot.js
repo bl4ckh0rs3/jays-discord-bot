@@ -23,8 +23,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    
     if(message.content.startsWith(prefix + "google")) {
     let google = args.slice(1).join('+');
     let link = `https://www.google.com/search?q=` + google;
