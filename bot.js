@@ -23,6 +23,9 @@ client.on('message', message => {
   	}
 });
 
+switch(message) case 'dick':alert('Som buzerant!')
+{}
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 
