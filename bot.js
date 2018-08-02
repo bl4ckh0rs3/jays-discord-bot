@@ -23,6 +23,28 @@ client.on('message', message => {
   	}
 });
 
+// test novinky
+
+var bot = new Discord.Client({
+});
+
+bot.on('message', function (user, userID, channelID, message, evt) {
+    if (message.substring(0, 1) == '$') {
+        var args = message.substring(1).split(' ');
+        var cmd = args[0];
+       
+        args = args.splice(1);
+        switch(cmd) {
+            case 'dick':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Ty si dick!'
+                });
+            break;
+         }
+     }
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 
