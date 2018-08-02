@@ -17,6 +17,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'Bitch') {
+    	message.reply('What did you say to me you little punk? Fuck you! :middle_finger:');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 
