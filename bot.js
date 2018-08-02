@@ -23,18 +23,6 @@ client.on('message', message => {
   	}
 });
 
-    if(message.content.startsWith(prefix + "google")) {
-    let google = args.slice(1).join('+');
-    let link = `https://www.google.com/search?q=` + google;
-	message.channel.send(link);
-}
-    
-if(message.content.startsWith(prefix + "youtube")) {
-    let youtube = args.slice(1).join('+');
-    let link = `https://www.youtube.com/results?search_query=` + youtube;
-	message.channel.send(link);
-}
-    
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 
